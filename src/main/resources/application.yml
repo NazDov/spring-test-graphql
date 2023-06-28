@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+  graphql:
+    path: /graphql
+    graphiql:
+      enabled: true
+      path: /graphiql
+  datasource:
+    url: jdbc:postgresql://localhost:5430/eblog?autoReconnect=true
+    username: root
+    password: root
+    driver-class-name: org.postgresql.Driver
+  jpa:
+   hibernate.ddl-auto: update
+   show-sql: true
+   generate-ddl: true
